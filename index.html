@@ -1,8 +1,18 @@
-<html >
-  <head>
-    
-  </head>
-  <body>
-    y6
-  </body>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>页面加载时源码变话</title>
+    <script>
+        window.onload = function() {
+            var content = document.documentElement.innerHTML;
+            var newContent = "这是一段文字：" + content;
+            document.documentElement.innerHTML = newContent;
+        }
+    </script>
+</head>
+<body>
+    <h1>欢迎来到我的网站</h1>
+    <p>这是一个示例段落。</p>
+</body>
 </html>
